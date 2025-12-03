@@ -4,7 +4,11 @@ accum=0
 filename="day-02-input.txt"
 #filename=sample-02.txt
 
-while read -r range; do
+input=$(< "$filename")
+
+IFS=',' read -r -a ranges <<< "$input"
+
+for range in "${ranges[@]}"; do
     [[ $range ]] || continue
 
     IFS='-' read -r low high <<< "$range"
@@ -20,6 +24,6 @@ while read -r range; do
 	}
 	fi
     done
-done < <(tr ',' '\n' < "$filename")
+done
 
 echo "Total is $accum"
