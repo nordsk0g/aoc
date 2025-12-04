@@ -2,8 +2,7 @@
 
 # dial starts at 50
 dial=50
-filename='day-01-input.txt'
-#filename='test-01.txt'
+filename="input.txt"
 num_zeroes=0
 
 process() {

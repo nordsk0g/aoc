@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 accum=0
-filename="day-02-input.txt"
-#filename=sample-02.txt
+filename="input.txt"
+#filename="sample.txt"
 
 input=$(< "$filename")
 

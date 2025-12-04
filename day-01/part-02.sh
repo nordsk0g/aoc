@@ -2,7 +2,7 @@
 
 # dial starts at 50
 dial=50
-filename='day-01-input.txt'
+filename="day-01-input.txt"
 num_zeroes=0
 
 while IFS=$'\r' read -r line; do
